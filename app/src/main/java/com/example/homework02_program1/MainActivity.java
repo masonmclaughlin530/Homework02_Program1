@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             {
                 //Log.d("SeekBar Test: " , "SeekBar listener is working");
                 tv_j_getTestValue.setText(String.valueOf(i));
-                android
+
             }
 
             @Override
