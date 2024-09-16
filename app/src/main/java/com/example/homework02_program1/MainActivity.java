@@ -5,6 +5,7 @@
 //=====================================================
 package com.example.homework02_program1;
 
+import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
@@ -95,12 +96,27 @@ public class MainActivity extends AppCompatActivity
     private void redSeekBarEventListener()
     {
         sb_j_red.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b)
             {
                 tv_j_red.setText("Red: " + String.valueOf(i));
                 red = i;
                 changeBackground();
+                if(red <= 100 && green <= 100 && blue <= 100)
+                {
+                    tv_j_red.setTextColor(Color.parseColor("#FFFFFF"));
+                    tv_j_blue.setTextColor(Color.parseColor("#FFFFFF"));
+                    tv_j_green.setTextColor(Color.parseColor("#FFFFFF"));
+                    tv_j_hexRep.setTextColor(Color.parseColor("#FFFFFF"));
+                }
+                else
+                {
+                    tv_j_red.setTextColor(Color.parseColor("#000000"));
+                    tv_j_blue.setTextColor(Color.parseColor("#000000"));
+                    tv_j_green.setTextColor(Color.parseColor("#000000"));
+                    tv_j_hexRep.setTextColor(Color.parseColor("#000000"));
+                }
             }
 
             @Override
@@ -125,6 +141,20 @@ public class MainActivity extends AppCompatActivity
                 tv_j_green.setText("Green: " + String.valueOf(i));
                 green = i;
                 changeBackground();
+                if(red <= 100 && green <= 100 && blue <= 100)
+                {
+                    tv_j_red.setTextColor(Color.parseColor("#FFFFFF"));
+                    tv_j_blue.setTextColor(Color.parseColor("#FFFFFF"));
+                    tv_j_green.setTextColor(Color.parseColor("#FFFFFF"));
+                    tv_j_hexRep.setTextColor(Color.parseColor("#FFFFFF"));
+                }
+                else
+                {
+                    tv_j_red.setTextColor(Color.parseColor("#000000"));
+                    tv_j_blue.setTextColor(Color.parseColor("#000000"));
+                    tv_j_green.setTextColor(Color.parseColor("#000000"));
+                    tv_j_hexRep.setTextColor(Color.parseColor("#000000"));
+                }
             }
 
             @Override
@@ -148,6 +178,20 @@ public class MainActivity extends AppCompatActivity
                 tv_j_blue.setText("Blue: " + String.valueOf(i));
                 blue = i;
                 changeBackground();
+                if(red <= 100 && green <= 100 && blue <= 100)
+                {
+                    tv_j_red.setTextColor(Color.parseColor("#FFFFFF"));
+                    tv_j_blue.setTextColor(Color.parseColor("#FFFFFF"));
+                    tv_j_green.setTextColor(Color.parseColor("#FFFFFF"));
+                    tv_j_hexRep.setTextColor(Color.parseColor("#FFFFFF"));
+                }
+                else
+                {
+                    tv_j_red.setTextColor(Color.parseColor("#000000"));
+                    tv_j_blue.setTextColor(Color.parseColor("#000000"));
+                    tv_j_green.setTextColor(Color.parseColor("#000000"));
+                    tv_j_hexRep.setTextColor(Color.parseColor("#000000"));
+                }
             }
 
             @Override
