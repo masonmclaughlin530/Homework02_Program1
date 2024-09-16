@@ -76,9 +76,9 @@ public class MainActivity extends AppCompatActivity
         sb_j_green.setMax(255);
         sb_j_blue.setMax(255);
 
-        tv_j_red.setText("255");
-        tv_j_green.setText("255");
-        tv_j_blue.setText("255");
+        tv_j_red.setText("Red: 255");
+        tv_j_green.setText("Green: 255");
+        tv_j_blue.setText("Blue: 255");
         tv_j_hexRep.setText("Hex representation: " + hex);
 
         //event listeners
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b)
             {
-                tv_j_red.setText(String.valueOf(i));
+                tv_j_red.setText("Red: " + String.valueOf(i));
                 red = i;
                 changeBackground();
             }
@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b)
             {
-                tv_j_green.setText(String.valueOf(i));
+                tv_j_green.setText("Green: " + String.valueOf(i));
                 green = i;
                 changeBackground();
             }
@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b)
             {
-                tv_j_blue.setText(String.valueOf(i));
+                tv_j_blue.setText("Blue: " + String.valueOf(i));
                 blue = i;
                 changeBackground();
             }
@@ -193,9 +193,9 @@ public class MainActivity extends AppCompatActivity
         sb_j_green.setProgress(255);
         sb_j_blue.setProgress(255);
 
-        tv_j_red.setText("255");
-        tv_j_green.setText("255");
-        tv_j_blue.setText("255");
+        tv_j_red.setText("Red: 255");
+        tv_j_green.setText("Green: 255");
+        tv_j_blue.setText("Blue: 255");
         tv_j_hexRep.setText("Hex representation: " + hex);
     }
 }
